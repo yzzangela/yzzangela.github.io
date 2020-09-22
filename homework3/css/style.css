@@ -11,10 +11,6 @@ body{
   background-repeat: no-repeat;
 }
 
-:focus{
-  outline-style: dotted;
-} 
-
 main{
   margin-bottom: 100px;
 }
@@ -33,6 +29,7 @@ caption{
 
 p{
   padding-top: 15px;
+  color: black;
 }
 
 a{
@@ -43,15 +40,13 @@ a{
 }
 
 table{
-    border: 2px solid #000000;
+    border-top: 2px solid #000000;
+    border-left: 2px solid #000000;
+    border-right: 2px solid #000000;
     text-align:center;
     margin-left: auto;
     margin-right: auto;
     border-radius:10px;
-    padding-top: 10px;
-    padding-bottom:10px;
-    padding-left:10px;
-    padding-right:10px;
 }
 
 .colhead{
@@ -67,26 +62,26 @@ table{
 }
 
 .rowhead{
-  border-left: 2px solid #000000;
-  border-right:  2px solid #000000; 
   border-bottom: 2px solid #000000;
 }
 
-tr:last-child td:first-child {
-  border-bottom-left-radius: 10px;
-}
-
-tr:first-child th:first-child {
+.colhead:first-of-type{
   border-top-left-radius: 10px;
 }
 
-tr:last-child td:last-child {
-  border-bottom-right-radius: 10px;
-}
-tr:first-child th:last-child {
+.colhead:last-of-type{
   border-top-right-radius: 10px;
 }
 
+tr:last-of-type:last-child >
+th.rowhead{
+  border-bottom-left-radius: 10px;
+}
+
+tr:last-of-type:last-child >
+td:last-of-type{
+  border-bottom-right-radius: 10px;
+}
 
 td{
   padding: 15px;
@@ -117,5 +112,6 @@ footer{
   text-align:center;
   color: #FFFFFF;
   min-height: 75px;
+  position: relative;
 }
 

@@ -6,7 +6,7 @@ body{
     background-size: cover ;
     background-position: center;
     background-repeat: no-repeat; 
-    background-image: url("../images/pigeonbackground.jpg");
+    background-image: url("../images/pigeon-background.JPEG");
     background-color: #DDDDDD;
   }
   
@@ -48,7 +48,7 @@ table{
 }
   
 .colhead{
-    background-color: #7e0830;
+    background-color: #7e0820;
     color: #FFFFFF;
     min-width: 125px;
     padding: 10px;
@@ -67,19 +67,13 @@ td{
     text-align:center;
     border-top: 2px solid #000000;
 }
-  
-tr{
-    padding: 10px;
-    text-align:center;
-    border-top: 2px solid #000000;
-}
 
 tbody tr:nth-child(even) {
-    background-color: transparent; 
+    background-color:  #D1D1D1; 
 }
   
 tbody tr:nth-child(odd) {
-    background-color:  #D1D1D1
+    background-color:  transparent; 
 }
   
 tbody tr:hover {
@@ -102,7 +96,6 @@ tbody tr:last-child td:last-child{
     border-bottom-right-radius: 10px;
 }
   
-  
 footer{
     width:100%;
     background:#000000;
@@ -110,7 +103,7 @@ footer{
     color: #FFFFFF;
     min-height: 75px;
     position: fixed;
-    width: 100%;
-    margin-left:-1.2em
+    left: 0;
+    bottom: 0;
 }
   

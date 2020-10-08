@@ -36,7 +36,8 @@ nav a{
 /*Your Code Here*/
 /*Write selector/rule property to add an underline when
 links in the navigation are in the hover or focus state.*/
-.txt:hover {
+
+nav a:hover{
   text-decoration: underline;
 }
 
@@ -53,7 +54,9 @@ links in the navigation are in the hover or focus state.*/
 
 /*Your Code Here*/
 /*Write selector/rule property to position the skip class element*/
-
+.skip a:focus{
+  top: 0;
+}
 /*Your Code Here*/
 /*Write selector/rule property to style all elements when in focus*/
 *:focus{ 
@@ -107,45 +110,71 @@ header p{
   text-align: center;
 }
 
-.about, .method, .clients, .contact{
-  grid-column: 2 / 3 ;
-  /*Your Code Here*/
-}
-
-.about-image, .method-image, .clients-image, .contact-image{
-  grid-column: 1 / -1 ;
-  max-height: 700px;
-  /*Your Code Here*/
-
-}
-
-.about, .about-image{
+.about-image{
   grid-row: 2 / 3 ;
+  grid-column: 1 / -1;
+  overflow: hidden;
+  max-height:700px;
   /*Your Code Here*/
 
 }
 
-.method, .method-image{
+.about{
+  grid-row: 2 / 3 ;
+  grid-column: 2 / span 3;
+  /*Your Code Here*/
+
+}
+
+.method-image{
   grid-row: 3 / 4 ;
+  grid-column: 1 / -1;
+  overflow: hidden;
+  max-height:700px;
   /*Your Code Here*/
 
 }
 
-.clients, .clients-image{
+.method{
+  grid-row: 3 / 4 ;
+  grid-column: 2 / span 3;
+  /*Your Code Here*/
+
+}
+
+.clients{
   grid-row: 4 / 5 ;
+  grid-column: 2 / span 3;
+}
+
+.clients-image{
+  grid-row: 4 / 5 ;
+  grid-column: 1 / -1;
+  overflow: hidden;
+  max-height:700px;
   /*Your Code Here*/
 }
 
-.contact, .contact-image{
+.contact{
   grid-row: 5 / 6 ;
+  grid-column: 2 / span 3;
+  /*Your Code Here*/
+}
+
+.contact-image{
+  grid-row: 5 / 6 ;
+  grid-column: 1 / -1;
+  overflow: hidden;
+  max-height:700px;
   /*Your Code Here*/
 }
 
 .text-block{
-background-color: rgba(255, 255, 255, .8);
+  background-color: rgba(255, 255, 255, .8);
   border: 10px solid black;
   padding: 30px;
   vertical-align: middle;
+  align-self:center;
 }
 
 
@@ -162,12 +191,12 @@ background-color: rgba(255, 255, 255, .8);
   }
 
   .about, .clients, .method-image, .contact-image{
-    grid-column: 3 / 5;
+    grid-column: 3 / span 5;
     /*Your Code Here*/
   }
 
   .about-image, .clients-image, .method, .contact{
-    grid-column: 2 / 5;
+    grid-column: 2 / span 5;
     /*Your Code Here*/
   }
 }

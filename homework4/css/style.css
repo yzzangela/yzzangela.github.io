@@ -111,7 +111,7 @@ header p{
 }
 
 .about-image{
-  grid-row: 2 / 3 ;
+  grid-row: 2 / 4 ;
   grid-column: 1 / -1;
   overflow: hidden;
   max-height:700px;
@@ -120,14 +120,14 @@ header p{
 }
 
 .about{
-  grid-row: 2 / 3 ;
+  grid-row: 2 / 4 ;
   grid-column: 2 / span 3;
   /*Your Code Here*/
 
 }
 
 .method-image{
-  grid-row: 3 / 4 ;
+  grid-row: 3 / 5 ;
   grid-column: 1 / -1;
   overflow: hidden;
   max-height:700px;
@@ -136,19 +136,19 @@ header p{
 }
 
 .method{
-  grid-row: 3 / 4 ;
+  grid-row: 3 / 5 ;
   grid-column: 2 / span 3;
   /*Your Code Here*/
 
 }
 
 .clients{
-  grid-row: 4 / 5 ;
+  grid-row: 4 / 6 ;
   grid-column: 2 / span 3;
 }
 
 .clients-image{
-  grid-row: 4 / 5 ;
+  grid-row: 4 / 6 ;
   grid-column: 1 / -1;
   overflow: hidden;
   max-height:700px;
@@ -156,13 +156,13 @@ header p{
 }
 
 .contact{
-  grid-row: 5 / 6 ;
+  grid-row: 5 / 7 ;
   grid-column: 2 / span 3;
   /*Your Code Here*/
 }
 
 .contact-image{
-  grid-row: 5 / 6 ;
+  grid-row: 5 / 7 ;
   grid-column: 1 / -1;
   overflow: hidden;
   max-height:700px;
@@ -191,7 +191,7 @@ header p{
   }
 
   .about, .clients, .method-image, .contact-image{
-    grid-column: 3 / span 5;
+    grid-column: 3 / span 6;
     /*Your Code Here*/
   }
 

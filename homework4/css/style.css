@@ -152,8 +152,8 @@ header p{
 @media all and (min-width: 800px){
   nav{
     padding: 30px 0px;
-    text-align: left;
-    background-color: #ddd;
+    text-align: right;
+    background-color: #dddddd;
     /*Your code here????????????:*/
   }
 

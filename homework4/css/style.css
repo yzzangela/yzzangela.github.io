@@ -1,0 +1,194 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+  background-color: #737373;
+  font-size: 18px;
+  margin: 0;
+  padding: 0;
+}
+
+h1{
+  font-size: 50px;
+  line-height: 1;
+  padding: 50px 0;
+  text-align: center;
+}
+
+h2{
+  font-size: 32px;
+  line-height: 1.5;
+}
+
+nav li{
+  display:inline;
+  padding-right:20px;
+
+}
+
+nav a{
+  color: black;
+  font-weight: bold;
+  text-decoration: none; 
+}
+
+/*Your Code Here*/
+/*Write selector/rule property to add an underline when
+links in the navigation are in the hover or focus state.*/
+.txt:hover {
+  text-decoration: underline;
+}
+
+.skip a{
+  background: white;
+  left: 0;
+  padding: 6px;
+  -webkit-transition: top 1s ease-out;
+  transition: top 1s ease-out;
+  z-index: 1;
+
+  /*Your code here*/
+}
+
+/*Your Code Here*/
+/*Write selector/rule property to position the skip class element*/
+
+/*Your Code Here*/
+/*Write selector/rule property to style all elements when in focus*/
+*:focus{ 
+  border-style: solid 2px;
+}
+
+nav{
+  background-color: #ddd;
+  padding: 25px 0; 
+  text-align: left;
+}
+
+footer{
+  background-color: black;
+  color: white;
+  padding-top: 30px;
+  text-align: center;
+}
+
+.container{
+  display: grid;
+  -webkit-grid-template-columns: 1fr, 5fr, 1fr;
+  grid-template-columns: 1fr, 5fr, 1fr;
+  grid-template-columns: 1fr, 5fr, 1fr;
+  grid-auto-rows: auto;
+  grid-row-gap: 15px;
+  overflow: hidden
+  /*Your Code Here*/
+}
+
+header{
+  background-attachment: fixed; /* Parallax effect */     
+  background-position: center;  /* Parallax effect */
+  background-repeat: no-repeat; /* Parallax effect */
+  background-size: cover;       /* Parallax effect */
+  color: white;
+  height: 400px;                /* Parallax effect */
+  background-image: url("../images/header.jpg");
+  background-repeat: no-repeat; 
+  background-attachment: fixed;
+  /*Your Code Here*/
+  /*Set background-image to header.jpg */
+  grid-column: 1 / -1;  /*Can you explain what this does?*/
+  grid-row: 1 / auto;   /*Can you rewrite it?*/
+}
+
+header p{
+  color: white;
+  font-size: 24px;
+  padding: 0 100px;
+  text-align: center;
+}
+
+.about, .method, .clients, .contact{
+  grid-column: 2 / 3 ;
+  /*Your Code Here*/
+}
+
+.about-image, .method-image, .clients-image, .contact-image{
+  grid-column: 1 / -1 ;
+  max-height: 700px;
+  /*Your Code Here*/
+
+}
+
+.about, .about-image{
+  grid-row: 2 / 3 ;
+  /*Your Code Here*/
+
+}
+
+.method, .method-image{
+  grid-row: 3 / 4 ;
+  /*Your Code Here*/
+
+}
+
+.clients, .clients-image{
+  grid-row: 4 / 5 ;
+  /*Your Code Here*/
+}
+
+.contact, .contact-image{
+  grid-row: 5 / 6 ;
+  /*Your Code Here*/
+}
+
+.text-block{
+background-color: rgba(255, 255, 255, .8);
+  border: 10px solid black;
+  padding: 30px;
+  vertical-align: middle;
+}
+
+
+@media all and (min-width: 800px){
+  nav{
+    padding: 30px 0px;
+    /*Your code here????????????:*/
+  }
+
+  .container{
+    grid-template-columns: 50px auto 500px auto 50px;
+    grid-template-rows: 400px 400px 400px 400px 400px;
+    /*Your Code Here*/
+  }
+
+  .about, .clients, .method-image, .contact-image{
+    grid-column: 3 / 5;
+    /*Your Code Here*/
+  }
+
+  .about-image, .clients-image, .method, .contact{
+    grid-column: 2 / 5;
+    /*Your Code Here*/
+  }
+}
+
+/*You do not need to modify any code below this line.
+It is included for accessibility to turn off animations
+and movement for people who have modified their 
+preferences to reduce motion.*/
+
+@media screen and (prefers-reduced-motion: reduce){
+  html{
+      scroll-behavior: auto; /* Removes scroll animation */
+  }
+
+  .skip a{
+    -webkit-transition: none; /* sets to default setting */
+    transition: none;        /* sets to default setting */
+   }
+
+  /*Turn off parallax*/
+  header{
+    background-attachment: initial;
+  }
+}

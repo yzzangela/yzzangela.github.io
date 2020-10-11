@@ -48,7 +48,8 @@ nav a:hover{
   -webkit-transition: top 1s ease-out;
   transition: top 1s ease-out;
   z-index: 1;
-  margin-top: -40px;
+  position: absolute;
+  top: -40px;
   /*Your code here*/
 }
 

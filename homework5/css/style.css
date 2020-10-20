@@ -2,7 +2,7 @@ body{
   font-family: 'Raleway', sans-serif; /* Test for this*/
   margin: 0;
   padding: 0;
-  font-size: 1.4em; /* test for this! Make all sizes em or rem */
+  font-size: 16pt; /* test for this! Make all sizes em or rem */
   background-image: url('../images/concrete_seamless.png');
 }
 
@@ -53,7 +53,7 @@ footer{
 /*Begin your code here*/
 /*Keyframes for animation*/
 
-@-webkit-keyframes logo_wiggle{
+@-webkit-keyframes logo_design{
   from{
     width: 25px;
   }
@@ -63,7 +63,7 @@ footer{
   /*Your code here.*/
 }
 
-@keyframes logo_wiggle{
+@keyframes logo_design{
   from{
     width: 25px;
   }
@@ -74,10 +74,10 @@ footer{
 } 
 
 #logo{
-  -webkit-animation-name: logo_wiggle;
-  animation-name: logo_wiggle;
-  -webkit-animation-duration: 3s;
-  animation-duration: 3s;
+  -webkit-animation-name: logo_design;
+  animation-name: logo_design;
+  -webkit-animation-duration: 15s;
+  animation-duration: 15s;
   -webkit-animation-iteration-count: 1;
   animation-iteration-count: 1;
   /*Your code here.*/

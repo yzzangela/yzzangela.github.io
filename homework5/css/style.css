@@ -103,7 +103,6 @@ footer{
   /*Your code here.*/
   /*Take a look at flex-basis*/
   flex-basis: 400px;
-
 }
 
 .card > header{
@@ -241,7 +240,7 @@ header{
   /*You will want four selectors*/  
 }
 
-@media screen{
+@media screen and (prefers-reduced-motion: reduce){
   #logo{
     -webkit-animation: none;
     animation: none;

@@ -1,0 +1,199 @@
+body{
+  font-family: 'Montserrat'; 
+  font-size: 16pt;
+  background: black;
+}
+
+header{
+  border-bottom: 1px solid white;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  width: 85%;
+  margin:auto;
+  justify-content: space-between;
+}
+
+.header{
+  font-size: 2em;
+  margin-top: 0;
+  text-align: center;
+  list-style: none;
+}
+
+h1{
+  font-size: 2em;
+  margin-top: 70px;
+  text-align: center;
+  color:  white;
+}
+
+h2{
+  font-size: 1.5em;
+  text-align: center;
+  padding: 5px;
+  color:  white;
+}
+
+p {
+  text-align: center;
+  color:  white;
+}
+
+.nav_links{
+  align-items: center;
+  display: flex;
+  text-align: center;
+  flex-direction: row;
+  list-style-type: none;
+  justify-content: center;
+  width: auto ;
+  max-width: 100% ;
+  height: auto ;
+}
+
+.nav_item {
+  padding: 12px;
+  width: auto ;
+  max-width: 100% ;
+  height: auto ;
+}
+
+.nav_item a{
+  color:  white;
+  text-decoration: none;
+  width: auto ;
+  max-width: 100% ;
+  height: auto ;
+}
+
+.nav_item a:hover, a:focus{
+  color:  white;
+  text-decoration: underline;
+  -webkit-text-decoration-style: dotted;
+  text-decoration-style: dotted;
+}
+
+a.skip:focus{
+  top:20px;
+  color:  white;
+}
+
+*:focus{
+  border: 1px solid   white;
+}
+
+@-webkit-keyframes frontsanimationss{
+  0% {opacity:0;}
+  100% {opacity:2;} 
+}
+
+@keyframes frontsanimationss{
+  0% {opacity:0;}
+  100% {opacity:2;}
+} 
+
+#frontanimations{
+  -webkit-animation-name: frontsanimationss;
+  animation-name: frontsanimationss;
+  -webkit-animation-duration: 5s;
+  animation-duration: 5s;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards; 
+}
+
+
+/*work*/
+.gallerytwo{
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto;
+  grid-column-gap: 30px;
+  grid-row-gap: 30px;
+  padding:80px;
+  width: 80%;
+  margin:auto;
+}
+
+#images1,#images2,#images3,#images4{
+    float: center;
+    width:  100%;
+    height: auto;
+    object-fit: cover;
+}
+/*end of work*/
+
+/*resume*/
+#resumepng{
+  width: 60% ;
+  padding: 80px;
+  max-width: 100% ;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+/*end of resume*/
+
+/*about page*/
+
+#bios{
+  font-size: 1.5em;
+  text-align: center;
+  padding: 20px;
+  padding-top: 50px;
+  width:80%;
+  margin: auto;
+}
+
+#biosp{
+  text-align: center;
+  padding: 5px;
+  width:70%;
+  margin:auto;
+}
+
+#drawings{
+  text-align: center;
+  padding: 5px;
+  width:70%;
+  margin:auto;
+}
+
+#gallery{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto auto;
+  grid-column-gap: 15px;
+  grid-row-gap: 15px;
+  padding:50px;
+  padding-top:90px;
+  width: 80%;
+  margin:auto;
+  align-items: center;
+}
+
+#image1, #image2, #image3, #image4, #image5, #image6, #image7, #image8, #image9{
+    float: center;
+    max-width: 100%;
+}
+
+/*end of about page*/
+
+footer{
+  color:  white;
+  padding: 10px;
+  text-align: center;
+}
+
+@media screen and (prefers-reduced-motion: reduce){
+  #frontanimations{
+    -webkit-animation: none;
+    animation: none;
+  }
+}
+
+
+
+
+

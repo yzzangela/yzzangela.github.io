@@ -10,7 +10,7 @@ header{
   display: flex;
   flex-direction: column;
   width: 85%;
-  margin:auto;
+  margin: auto;
   justify-content: space-between;
 }
 
@@ -50,6 +50,7 @@ p {
   width: auto ;
   max-width: 100% ;
   height: auto ;
+  margin: auto;
 }
 
 .nav_item {
@@ -57,6 +58,7 @@ p {
   width: auto ;
   max-width: 100% ;
   height: auto ;
+  margin: auto;
 }
 
 .nav_item a{
@@ -65,6 +67,7 @@ p {
   width: auto ;
   max-width: 100% ;
   height: auto ;
+  margin: auto;
 }
 
 .nav_item a:hover, a:focus{
@@ -72,6 +75,7 @@ p {
   text-decoration: underline;
   -webkit-text-decoration-style: dotted;
   text-decoration-style: dotted;
+  margin: auto;
 }
 
 a.skip:focus{
@@ -111,16 +115,15 @@ a.skip:focus{
   grid-template-rows: auto auto;
   grid-column-gap: 30px;
   grid-row-gap: 30px;
-  padding:80px;
-  width: 80%;
+  padding:60px;
+  width: auto;
   margin:auto;
+  align-items: center;
 }
 
 #images1,#images2,#images3,#images4{
-    float: center;
-    width:  100%;
+    max-width:  100%;
     height: auto;
-    object-fit: cover;
 }
 /*end of work*/
 

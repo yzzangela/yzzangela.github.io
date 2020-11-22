@@ -2,6 +2,7 @@ var video;
 
 window.addEventListener("load", function() {
 	video = document.querySelector("#myVideo");
+	document.getElementById("volume").innerHTML = myVideo.volume * 100 + "%";
 	console.log("Starting");
 	console.log(video.volume);
 });
@@ -52,11 +53,11 @@ document.querySelector("#volumeSlider").addEventListener("change", function() {
 });
 
 document.querySelector("#old").addEventListener("click", function() {
-	document.getElementsByClassName("oldTime").style.filter = "grayscale(100%)";
+	myVideo.classList.add("oldTime");
 });
 
 document.querySelector("#original").addEventListener("click", function() {
-	document.getElementsByClassName("oldTime").style.filter = "none";
+	myVideo.classList.remove("oldTime");
 });
 
 

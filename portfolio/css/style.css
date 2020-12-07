@@ -47,30 +47,28 @@ p {
   flex-direction: row;
   list-style-type: none;
   justify-content: center;
-  width: auto ;
   max-width: 100% ;
   height: auto ;
   margin: auto;
 }
 
-.nav_item {
+.nav_links .nav_item {
   padding: 12px;
-  width: auto ;
   max-width: 100% ;
   height: auto ;
   margin: auto;
 }
 
-.nav_item a{
+
+.nav_links .nav_item a{
   color:  white;
   text-decoration: none;
-  width: auto ;
   max-width: 100% ;
   height: auto ;
   margin: auto;
 }
 
-.nav_item a:hover, a:focus{
+.nav_links .nav_item a:hover, a:focus{
   color:  white;
   text-decoration: underline;
   -webkit-text-decoration-style: dotted;
@@ -127,16 +125,78 @@ a.skip:focus{
 }
 /*end of work*/
 
-/*resume*/
-#resumepng{
-  width: 60% ;
-  padding: 80px;
-  max-width: 100% ;
-  display: block;
+/*contact*/
+.containers h1{
+  color: white;
+  font-size: 30px;
+  background: none;
+}
+
+.containers h2{
+  color: white;
+  font-size: 20px;
+  background: none;
+}
+
+.container{
+  width:auto;
+  box-shadow: 0 15px 35px rgba(50,50,93,.1),0 5px 15px rgba(0,0,0,.07);
+  padding:2em;
+  background-color:#fff;
+  text-align:center;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 20px;
 }
-/*end of resume*/
+
+.form-group{
+  margin-bottom:1.5em;
+}
+
+.form-label{
+  font-size:.75em;
+  color:var(--font-color);
+  display:block;
+  opacity:0;
+  transform:translateX(-50px);
+}
+.form-control{
+  box-shadow:none;
+  border-radius:0;
+  border-color:#ccc;
+  border-style:none none solid none;
+  width:100%;
+  font-size:1.25em;
+  transition:all .6s;
+}
+.form-control::placeholder{
+  color:#aaa;
+}
+.form-control:focus{
+  box-shadow:none;
+  border-color:var(--font-hover-color);
+  outline:none;
+}
+
+.btn{
+  background: 0 0 #fff;
+  border:1px solid #aaa;
+  border-radius:3px;
+  color:var(--font-color);
+  font-size:1em;
+  padding:10 50px;
+  text-transform:uppercase;
+}
+.btn:hover{
+  border-color:var(--font-hover-color);
+  color:var(--font-hover-color);
+}
+textarea{
+  resize:none;
+}
+
+
+/*end of contact*/
 
 /*about page*/
 
@@ -187,6 +247,7 @@ footer{
   color:  white;
   padding: 10px;
   text-align: center;
+  max-width: 100%;
 }
 
 @media screen and (prefers-reduced-motion: reduce){

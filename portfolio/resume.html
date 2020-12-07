@@ -7,7 +7,8 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"/>
     <link rel="shortcut icon" type="image/png" href="images/logodesign.png"/>
-    <title>Work</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <title>Contact</title>
   </head>
   <body>
     <nav>
@@ -21,17 +22,39 @@
   <header>
     <h1 class="header">Angela Li</h1>
   </header>
-  <main class="workthingstwo" id="work" tabindex="0">
-    <div class="gallerytwo"> 
-      <img id="images1" src="images/images1.png" alt=""/>
-      <img id="images2" src="images/images2.png" alt=""/>
-      <img id="images3" src="images/images3.png" alt=""/>
-      <img id="images4" src="images/images4.png" alt="" />
+  <main class="resume" id="resumephoto" tabindex="0">
+    <div class="containers">  
+      <h1 class="sayhello">Contact Angela</h1>
+      <h2 class="resumecontact">Please contact me for a copy of my resume!</h1>
+    </div>
+    <div class="container">
+      <form action="contactform.php" method="POST" class="form">
+          <div class="form-group">
+              <label for="name" class="form-label">Your Name</label>
+              <input type="text" class="form-control" id="name" name="name" placeholder="Jane Doe" tabindex="1" required>
+          </div>
+          <div class="form-group">
+              <label for="email" class="form-label">Your Email</label>
+              <input type="email" class="form-control" id="email" name="email" placeholder="jane@doe.com" tabindex="2" required>
+          </div>
+          <div class="form-group">
+              <label for="subject" class="form-label">Subject</label>
+              <input type="text" class="form-control" id="subject" name="subject" placeholder="Hello There!" tabindex="3" required>
+          </div>
+          <div class="form-group">
+              <label for="message" class="form-label">Message</label>
+              <textarea class="form-control" rows="5" cols="50" id="message" name="message" placeholder="Enter Message..." tabindex="4"></textarea>
+          </div>
+          <div>
+              <button type="submit" class="btn">Send Message!</button>
+          </div>
+      </form>
     </div>
   </main>
-      <footer>
-        <h2 id = "contact">Let's grab coffee &#x2615; over Zoom!</h2>
-        <p>angieali@umich.edu</p>
-      </footer>
+    <footer>
+      <h2 id = "contact">Let's grab coffee &#x2615; over Zoom!</h2>
+      <p>angieali@umich.edu</p>
+    </footer>
+  <script src="main.js"></script>
   </body>
 </html>

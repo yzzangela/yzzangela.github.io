@@ -1,6 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-TGZSMXX2NS"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-TGZSMXX2NS');
+    </script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
     <link rel="stylesheet" type="text/css" href="css/html5reset.css">
@@ -8,11 +16,22 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"/>
     <link rel="shortcut icon" type="image/png" href="images/logodesign.png"/>
     <title>Home</title>
+    <style>
+      .parallax {
+        background-image: url("images/smokeback.jpg");
+        min-height: 200px; 
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      </style>
   </head>
   <body>
+    <div class="skip"><a href="#frontanimation">Skip to Main Content</a></div>
     <nav>
       <ul class="nav_links">
-        <li class="nav_item"><a href="index.html">Home</a></li>
+        <li class="current"><a href="index.html">Home</a></li>
         <li class="nav_item"><a href="work.html">Work</a></li>
         <li class="nav_item"><a href="aboutme.html">About Me</a></li>
         <li class="nav_item"><a href="resume.html">Contact</a></li>
@@ -23,7 +42,12 @@
   </header>
   <main class="about" id="frontanimation" tabindex="0">
     <h1>Hi! I'm a Product Designer from San Francisco</h1>
+    <p id="homecontenttext">I create better experiences for users</p>
+    <div class="parallax"></div>
+    <div class="parallaxtext">
     <p id="frontanimations" >Come check out my work!</p>
+    </div>
+    <div class="parallax"></div>
   </main>
     <footer>
       <h2 id = "contact">Let's grab coffee &#x2615; over Zoom!</h2>

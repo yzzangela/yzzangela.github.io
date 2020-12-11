@@ -64,7 +64,7 @@ header{
 }
 
 .parallaxtext{
-  height:50px;
+  height:47px;
   background-color:black;
   font-size:20px;
   margin: auto;
@@ -401,6 +401,10 @@ footer{
     background:	#8f0da0;
   }
 
+  .parallaxtext{
+    height:32px;
+  }
+
 }
 
 @media print { 
@@ -433,6 +437,10 @@ footer{
   input {
     width: 70%;
     height: 25px;
+  }
+
+  .parallaxtext{
+    height:32px;
   }
   
   textarea {

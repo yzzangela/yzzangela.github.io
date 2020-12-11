@@ -5,15 +5,19 @@ body{
   color:white;
 }
 
-.skip a{
-  left: 5%;
-  padding: 15px;
-  -webkit-transition: top 3s ease-out;
-  transition: top 3s ease-out;
-  z-index: 1;
+.skip{
+  height: 30px;
+  left: 0%;
+  padding: 1px;
   position: absolute;
-  top: -60px;
-  color: white;
+  transform: translateY(-100%);
+  transition: transform 0.5s;
+  color: black;
+  font-size:12px;
+}
+
+.skip:focus {
+  transform: translateY(0%);
 }
 
 a{

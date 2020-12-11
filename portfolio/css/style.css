@@ -7,18 +7,6 @@ body{
   height: 100vh;
 }
 
-#spotify{
-  padding-top: 50px;
-  padding-bottom: 50px;
-  display: grid;
-  grid-template-columns: auto auto auto;
-  grid-template-rows: auto;
-  grid-column-gap: 10px;
-  grid-row-gap: 10px;
-  width: auto;
-  margin:auto;
-}
-
 .social-icon {
   max-width:  100%;
   height: auto;
@@ -82,6 +70,7 @@ header{
   margin: auto;
   text-align: center;
   padding: 20px;
+  color:white;
 }
 
 h1{
@@ -365,6 +354,93 @@ footer{
   .flip-card-inner {
     transition: transform none;
 }
+}
+
+@media screen and (max-width: 850px){
+  .flip-card-inner {
+    transition: transform none;
+  }
+
+  #skipping a{
+    -webkit-transition: none;
+    transition: none;       
+  }
+
+  a{
+    color:  #87a9ff;
+  }
+  
+  .container{
+    border: none;
+    text-align: center;
+    margin: auto;
+    width: 60%;
+    background:	#95029d;
+    border-radius: 25px;
+    padding-bottom:10px;
+    display: block;
+  }
+
+  #gallery{
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto auto auto auto auto auto;
+
+  }
+
+  .gallerytwo{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto auto auto;
+    grid-column-gap: 30px;
+    grid-row-gap: 80px;
+    width: 90%;
+    margin:auto;
+  }
+
+}
+
+@media print { 
+  .flip-card-inner {
+    transition: transform none;
+}
+  
+
+  #skipping a{
+    -webkit-transition: none;
+    transition: none;       
+  }
+  
+  a{
+    color:  #87a9ff;
+  }
+
+  .container{
+    border: none;
+    text-align: center;
+    margin: auto;
+    width: 60%;
+    background:	#95029d;
+    border-radius: 25px;
+    padding-bottom:10px;
+    display: block;
+  }
+
+  #gallery{
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto auto auto auto auto auto;
+
+  }
+
+  .gallerytwo{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto auto auto;
+    grid-column-gap: 30px;
+    grid-row-gap: 80px;
+    width: 90%;
+    margin:auto;
+  }
+
 }
 
 

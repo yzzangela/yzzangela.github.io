@@ -2,6 +2,7 @@ body{
   font-family: 'Montserrat'; 
   font-size: 16pt;
   background: black;
+  color:white;
 }
 
 .skip a{
@@ -242,6 +243,13 @@ p {
 }
 
 #biosp{
+  text-align: center;
+  padding: 5px;
+  width:70%;
+  margin:auto;
+}
+
+#biospp{
   text-align: center;
   padding: 5px;
   width:70%;

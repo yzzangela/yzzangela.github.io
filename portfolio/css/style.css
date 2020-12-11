@@ -12,7 +12,8 @@ body{
   position: absolute;
   transform: translateY(-100%);
   transition: transform 0.5s;
-  color: black;
+  background-color: #FB87FF;
+  color:black;
   font-size:12px;
 }
 

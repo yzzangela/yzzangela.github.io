@@ -1,22 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-TGZSMXX2NS"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-TGZSMXX2NS');
+    </script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
     <link rel="stylesheet" type="text/css" href="css/html5reset.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"/>
     <link rel="shortcut icon" type="image/png" href="images/logodesign.png"/>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <title>Contact</title>
   </head>
   <body>
+    <div id = "skipping" class="skip"><a href="#resumephoto">Skip to Main Content</a></div>
     <nav>
       <ul class="nav_links">
         <li class="nav_item"><a href="index.html">Home</a></li>
         <li class="nav_item"><a href="work.html">Work</a></li>
         <li class="nav_item"><a href="aboutme.html">About Me</a></li>
-        <li class="nav_item"><a href="resume.html">Contact</a></li>
+        <li class="current"><a href="resume.html">Contact</a></li>
       </ul>
     </nav>
   <header>
@@ -24,30 +32,30 @@
   </header>
   <main class="resume" id="resumephoto" tabindex="0">
     <div class="containers">  
-      <h1 class="sayhello">Contact Angela</h1>
-      <h2 class="resumecontact">Please contact me for a copy of my resume!</h1>
+      <p id = "biosp" >As a product designer, I take into account the business’s needs, the back-end’s needs, and the user’s needs when approaching a problem. Coming from a background in psychology, I always try to understand human behaviors and what drives a user's decision making process</p>
+      <p id = "biosp" >After working in three different psychology labs, I've gained extensive skills in data analysis and conducting qualitative research. I value using different user research methods, such as A/B testings and scales to weigh different metrics, such as usability and interaction style.</p>
+      <h1 class="sayhello">Contact Information</h1>
+      <h2 class="resumecontact">I would love to chat with you! It's quarentine and I'm lonely.</h1>
+      <h2 class="resumecontact">You can also contact me for a copy of my resume!</h1>
     </div>
     <div class="container">
-      <form action="contactform.php" method="POST" class="form">
-          <div class="form-group">
-              <label for="name" class="form-label">Your Name</label>
-              <input type="text" class="form-control" id="name" name="name" placeholder="Jane Doe" tabindex="1" required>
+      <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/mvovwoyr" method="post">
+        <fieldset id="fs-frm-inputs">
+          <div class="containername">
+            <label class = "names" for="full-name">Full Name</label>
+            <input class = "name" type="text" name="name" id="full-name" placeholder="First and Last" required="">
           </div>
-          <div class="form-group">
-              <label for="email" class="form-label">Your Email</label>
-              <input type="email" class="form-control" id="email" name="email" placeholder="jane@doe.com" tabindex="2" required>
+          <div class="containeremail">
+            <label class = "emails" for="email-address">Email Address</label>
+            <input class = "email" type="email" name="_replyto" id="email-address" placeholder="email@domain.tld" required="">
           </div>
-          <div class="form-group">
-              <label for="subject" class="form-label">Subject</label>
-              <input type="text" class="form-control" id="subject" name="subject" placeholder="Hello There!" tabindex="3" required>
+          <div class="containeremail">
+            <label class = "messages" for="message">Message</label>
+          <textarea class = "message" rows="5" name="message" id="message" placeholder="Aenean lacinia bibendum nulla sed consectetur. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor." required=""></textarea>
+          <input class = "message" type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
           </div>
-          <div class="form-group">
-              <label for="message" class="form-label">Message</label>
-              <textarea class="form-control" rows="5" cols="50" id="message" name="message" placeholder="Enter Message..." tabindex="4"></textarea>
-          </div>
-          <div>
-              <button type="submit" class="btn">Send Message!</button>
-          </div>
+        </fieldset>
+        <input class = "button" type="submit" value="Submit">
       </form>
     </div>
   </main>
@@ -55,6 +63,5 @@
       <h2 id = "contact">Let's grab coffee &#x2615; over Zoom!</h2>
       <p>angieali@umich.edu</p>
     </footer>
-  <script src="main.js"></script>
   </body>
 </html>

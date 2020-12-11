@@ -21,6 +21,11 @@ body{
   transform: translateY(0%);
 }
 
+.skip a{
+  color:black;
+}
+
+
 a{
   margin:0;
   font-size:100%;

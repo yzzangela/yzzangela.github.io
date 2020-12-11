@@ -4,14 +4,27 @@ body{
   background: black;
 }
 
+.skip a{
+  left: 5%;
+  padding: 15px;
+  -webkit-transition: top 3s ease-out;
+  transition: top 3s ease-out;
+  z-index: 1;
+  position: absolute;
+  top: -60px;
+  color: white;
+}
+
+a{
+  margin:0;
+  font-size:100%;
+}
+
 header{
   border-bottom: 1px solid white;
   align-items: center;
   display: flex;
   flex-direction: column;
-  width: 85%;
-  margin: auto;
-  justify-content: space-between;
 }
 
 .header{
@@ -19,6 +32,16 @@ header{
   margin-top: 0;
   text-align: center;
   list-style: none;
+}
+
+.parallaxtext{
+  height:50px;
+  background-color:black;
+  font-size:20px;
+  margin: auto;
+  text-align: center;
+  padding: 20px;
+  width:60%;
 }
 
 h1{
@@ -41,31 +64,26 @@ p {
 }
 
 .nav_links{
-  align-items: center;
   display: flex;
-  text-align: center;
   flex-direction: row;
   list-style-type: none;
   justify-content: center;
-  max-width: 100% ;
-  height: auto ;
-  margin: auto;
+  width: auto;
 }
 
 .nav_links .nav_item {
-  padding: 12px;
-  max-width: 100% ;
   height: auto ;
   margin: auto;
+  width: auto;
 }
 
 
 .nav_links .nav_item a{
   color:  white;
   text-decoration: none;
-  max-width: 100% ;
   height: auto ;
   margin: auto;
+  width: auto;
 }
 
 .nav_links .nav_item a:hover, a:focus{
@@ -74,15 +92,14 @@ p {
   -webkit-text-decoration-style: dotted;
   text-decoration-style: dotted;
   margin: auto;
+  width: auto;
 }
 
-a.skip:focus{
-  top:20px;
-  color:  white;
-}
-
-*:focus{
-  border: 1px solid   white;
+.nav_links .current{
+  color: purple;
+  height: auto ;
+  margin: auto;
+  width: auto;
 }
 
 @-webkit-keyframes frontsanimationss{
@@ -105,25 +122,10 @@ a.skip:focus{
   animation-fill-mode: forwards; 
 }
 
-
-/*work*/
-.gallerytwo{
-  display: grid;
-  grid-template-columns: auto auto;
-  grid-template-rows: auto auto;
-  grid-column-gap: 30px;
-  grid-row-gap: 30px;
-  padding:60px;
-  width: auto;
-  margin:auto;
-  align-items: center;
+#homecontenttext{
+  font-size: 25px;
+  padding-bottom: 20px;
 }
-
-#images1,#images2,#images3,#images4{
-    max-width:  100%;
-    height: auto;
-}
-/*end of work*/
 
 /*contact*/
 .containers h1{
@@ -138,65 +140,94 @@ a.skip:focus{
   background: none;
 }
 
+.containers{
+  padding: 50px;
+}
+
 .container{
-  width:auto;
-  box-shadow: 0 15px 35px rgba(50,50,93,.1),0 5px 15px rgba(0,0,0,.07);
-  padding:2em;
-  background-color:#fff;
-  text-align:center;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 20px;
+  border: none;
+  text-align: center;
+  margin: auto;
+  width: 60%;
+  position: relative;
+  background:	#4B0082;
+  border-radius: 25px;
+  padding-bottom:10px;
 }
 
-.form-group{
-  margin-bottom:1.5em;
+.containeremail, .containername, .containermessage{
+  margin: auto;
+  width: auto;
+  color: white;
+  padding: 20px;
 }
-
-.form-label{
-  font-size:.75em;
-  color:var(--font-color);
-  display:block;
-  opacity:0;
-  transform:translateX(-50px);
-}
-.form-control{
-  box-shadow:none;
-  border-radius:0;
-  border-color:#ccc;
-  border-style:none none solid none;
-  width:100%;
-  font-size:1.25em;
-  transition:all .6s;
-}
-.form-control::placeholder{
-  color:#aaa;
-}
-.form-control:focus{
-  box-shadow:none;
-  border-color:var(--font-hover-color);
-  outline:none;
-}
-
-.btn{
-  background: 0 0 #fff;
-  border:1px solid #aaa;
-  border-radius:3px;
-  color:var(--font-color);
-  font-size:1em;
-  padding:10 50px;
-  text-transform:uppercase;
-}
-.btn:hover{
-  border-color:var(--font-hover-color);
-  color:var(--font-hover-color);
-}
-textarea{
-  resize:none;
-}
-
 
 /*end of contact*/
+
+/*flip*/
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+
+#flip-card {
+  background-color: transparent;
+  width: 100%;
+  height: 100%;
+  padding-bottom: 300px;
+}
+
+#flip-card-inner {
+  width: 100%;
+  height: 100%;
+  transition: transform 1s;
+  transform-style: preserve-3d;
+  position: relative;
+}
+
+#flip-card:hover #flip-card-inner,
+#flip-card:focus-within #flip-card-inner,
+#flip-card:active #flip-card-inner,
+#flip-card:focus #flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+#flip-card-front,
+#flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  /* Safari */
+  backface-visibility: hidden;
+}
+
+#flip-card-back {
+  background-color: black;
+  color: white;
+  transform: rotateY(180deg);
+}
+/*end of flip*/
+
+/*work*/
+#work{
+  position: relative;
+  padding-top: 50px;
+}
+
+.gallerytwo{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto auto;
+  grid-column-gap: 30px;
+  grid-row-gap: 80px;
+  width: auto;
+  margin:auto;
+}
+
+#images1,#images2,#images3,#images4,#images5,#images6{
+    max-width:  100%;
+    height: auto;
+    object-fit: cover;
+}
+/*end of work*/
 
 /*about page*/
 
@@ -241,11 +272,16 @@ textarea{
     max-width: 100%;
 }
 
+#image1:hover, #image2:hover, #image3:hover, #image4:hover, #image5:hover, #image6:hover, #image7:hover, #image8:hover, #image9:hover{
+  outline: 2px solid rgb(140, 24, 223); 
+}
+
 /*end of about page*/
 
 footer{
   color:  white;
-  padding: 10px;
+  padding-top:50px;
+  padding-bottom:50px;
   text-align: center;
   max-width: 100%;
 }
@@ -255,6 +291,15 @@ footer{
     -webkit-animation: none;
     animation: none;
   }
+
+  #skipping a{
+    -webkit-transition: none;
+    transition: none;       
+  }
+
+  .flip-card-inner {
+    transition: transform none;
+}
 }
 
 

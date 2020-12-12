@@ -7,6 +7,29 @@ body{
   height: 100vh;
 }
 
+.seratonin{
+  padding-top:20px;
+  padding-bottom: 20px;
+}
+
+#dogbutton{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+  border-radius: 25px;
+  font-family: 'Montserrat'; 
+}
+
+#dogs{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+  background: purple;
+  border-radius: 25px;
+}
+
 .social-icon {
   max-width:  100%;
   height: auto;

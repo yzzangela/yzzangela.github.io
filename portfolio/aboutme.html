@@ -39,6 +39,23 @@
       </div>
 
       <p class = "drawings">In my free time, I enjoy playing chess, learning how to code, listening to music, and drawing. Here's some artwork that I've done!</p>
+      
+      <div class="seratonin"> 
+        <div class="seratonin"> 
+        <button id="dogbutton">Get some Seratonin!</button>
+        </div>
+      <img style="height: 250px;" id="dogs" alt = "dogs" src="http://placecorgi.com/250">
+      <script>
+        async function getDoggo(event) {
+          const res = await fetch("https://dog.ceo/api/breeds/image/random");
+          const resJson = await res.json();
+          document.getElementById("dogs").src = resJson.message;
+        }
+        document.getElementById('dogbutton')
+        .addEventListener('click', getDoggo)
+      </script>
+    </div>
+      
       <div id="gallery"> 
         <img id="image6" src="images/elephant.jpeg" alt="A picture of an elephant"/>
         <img id="image7" src="images/strawberry.jpeg" alt="A picture of a strawberry covered in chocolate"/>

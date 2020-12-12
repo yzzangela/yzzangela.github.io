@@ -26,7 +26,7 @@ body{
   margin-left: auto;
   margin-right: auto;
   padding: 10px;
-  background: purple;
+  border: rgb(140, 24, 223) solid;
   border-radius: 25px;
 }
 

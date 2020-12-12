@@ -427,6 +427,7 @@ footer{
   .gallerytwo{
     display: grid;
     grid-template-columns: auto;
+    grid-row-gap: 400px;
     grid-template-rows: auto auto auto auto auto auto;
   }
 
